@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tyyli.css">
+    <title>Master Mind</title>
+  </head>
+  <body>
+    <div id="pohja"></div>
+    <button onclick="pelaa()" class = "pelaaNappi eiVapaana" id = "pelaaNappi">Arvaa</button>
+
+    <div id="voitto" style = "display: none;">
+      <div class="voittoBox">
+        <p>Voitit pelin gg wp</p>
+        <button onclick="painaOk()">OK</button>
+      </div>
+    </div>
+
+    <div id="havio" style = "display: none;">
+      <div class="havioBox">
+        <p>Hävisit pelin, u suck</p>
+        <button onclick="painaOk()">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src = "code.js"></script>
