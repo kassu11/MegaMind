@@ -1,2 +1,2 @@
 # MegaMind
-Linkki peliin -->
+Linkki peliin --> https://kassu11.github.io/MegaMind/
