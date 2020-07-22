@@ -126,7 +126,10 @@ function pelaa() {
   }
 
   arvatutVarit = [];
+  document.getElementById(`rivi${kyseinenRuutu}`).style = null;
+  document.getElementById(`rivi${kyseinenRuutu}`).style.pointerEvents = "none";
   kyseinenRuutu -= 1;
+  document.getElementById(`rivi${kyseinenRuutu}`).style.backgroundColor = "#8c8c8c";
   document.getElementById(`rivi${kyseinenRuutu}`).classList.remove("eiValittu");
 }
 
@@ -153,6 +156,7 @@ function aloitaAlusta() {
     rivi.classList.add("rivi");
     rivi.id = `rivi${i}`;
     if(i != 5) rivi.classList.add("eiValittu");
+    else rivi.style.backgroundColor = "#8c8c8c";
     for(let u = 0; u < 4; u++) {
       let vari = document.createElement("div");
       vari.classList.add("vari");
