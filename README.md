@@ -1,8 +1,9 @@
 # MegaMind
-Linkki peliin --> https://kassu11.github.io/MegaMind/
 
+> Linkki peliin: <a href="https://kassu11.github.io/MegaMind/">https://kassu11.github.io/MegaMind/</a>
 
-## Ohjeet peliin:
+## Ohjeet peliin
+
 Pelin tarkotus on arvata satunnaisesti luotu väri koodi.
 Teet arvauksen painamalla valkoista ympyrää näytöllä, jolloin saat valita minkä värin haluat siihen laittaa.
 Kun olet avannut rivin saat siitä väri tietoa oikealle puolella.
