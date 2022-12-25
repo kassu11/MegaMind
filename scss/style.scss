@@ -1,3 +1,102 @@
 body {
   background: black;
 }
+
+#board {
+  position: relative;
+  background: purple;
+  width: max-content;
+  padding: 10px;
+
+  .rows {
+    position: relative;
+    padding: 10px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+
+    
+    .row {
+      display: flex;
+      background: aqua;
+      padding: 2px;
+
+      &.selected {
+        outline: 2px solid black;
+        outline-offset: 2px;
+      }
+
+      &.disabled {
+        filter: brightness(.5)
+      }
+
+      @at-root .colors {
+        display: flex;
+        background: green;
+        gap: 10px;
+        padding: 10px;
+    
+        .col {
+          background: white;
+          width: 50px;
+          height: 50px;
+          border: 0px;
+
+          &.selected {
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              inset: 0px;
+              background: rgba(0, 0, 0, 0.216);
+            }
+          }
+          
+        }
+      }
+
+      .answerColors {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: crimson;
+      }
+    }
+  }
+
+  .colorSelection {
+    background: pink;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+
+    .color {
+      position: relative;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .red {
+    background: red;
+  } 
+  .blue {
+    background: blue;
+  } 
+  .green {
+    background: lime;
+  } 
+  .yellow {
+    background: yellow;
+  } 
+  .brown {
+    background: brown;
+  } 
+  .orange {
+    background: orange;
+  }
+}
